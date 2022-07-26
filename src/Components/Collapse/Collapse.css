@@ -1,0 +1,67 @@
+.collapse {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 15px;
+  width: 100%;
+  overflow: hidden;
+  flex-direction: column;
+  transition: all 0.4s ease-in-out;
+}
+.top-coll {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  cursor: pointer;
+}
+.left-coll {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  pointer-events: none;
+  gap: 4px;
+}
+.left-coll h3 {
+  font-size: 18px;
+  color: #3baead;
+  pointer-events: none;
+}
+.left-coll p {
+  font-size: 14px;
+  color: grey;
+  pointer-events: none;
+}
+.top-coll svg {
+  background: var(--gradient);
+  padding: 10px;
+  box-sizing: border-box !important;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: white;
+  transition: all 0.4s ease-in-out;
+  pointer-events: none;
+}
+.answer {
+  max-height: 0px;
+  color: grey;
+  font-size: 16px;
+  transition: all 0.4s ease-in-out;
+  padding-inline: 20px;
+  padding-top: 0px;
+}
+.rotate {
+  transform: rotate(-90deg);
+}
+.active-answer {
+  padding-bottom: 20px;
+  max-height: 800px;
+  line-height: 1.2;
+}
+.active-coll {
+  overflow: visible;
+}
