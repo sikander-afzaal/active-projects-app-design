@@ -65,6 +65,7 @@ body {
   object-fit: cover;
   mix-blend-mode: soft-light;
   z-index: -1;
+  border-radius: 20px;
 }
 .top-banner {
   display: flex;
