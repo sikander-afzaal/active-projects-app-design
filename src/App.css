@@ -12,24 +12,33 @@ body {
   align-items: center;
   flex-direction: column;
   background-color: #ececec;
-  max-height: 600px;
   max-width: 400px;
   width: 100%;
   overflow-y: auto;
   border-radius: 15px;
-  padding-top: 20px;
+  padding-top: 60px;
   gap: 20px;
-  padding-bottom: 0px;
+  padding-bottom: 110px;
+  position: relative;
 }
 .top-box {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding-inline: 10px;
+  max-width: 400px;
+  z-index: 5;
+  background-color: #ececec;
+  position: fixed;
+  left: 50%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transform: translateX(-50%);
+  top: 0;
+  padding-inline: 20px;
 }
 .top-box img {
-  max-width: 40px;
+  max-width: 30px;
   object-fit: contain;
 }
 .box-banner {
@@ -154,6 +163,11 @@ body {
   border-radius: 20px;
   padding: 10px 10px;
   margin-top: 20px;
+  position: fixed;
+  max-width: 400px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .bottom-nav img {
   max-width: 30px;
